@@ -3,8 +3,11 @@ import router from './routes/ai.route.js'
 import cors from 'cors'
 
 const app = express()
-
-app.use(cors())
+const allowedOrigins = ['http://localhost:5173','https://ai-reviewer-j876.vercel.app/']
+app.use(cors({
+    origin:allowedOrigins,
+    credentials:true
+}))
 app.use(express.json())
 app.get('/',(req,res)=>{
     res.send("API IS RUNNING")
