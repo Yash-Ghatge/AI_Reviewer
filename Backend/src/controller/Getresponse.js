@@ -1,4 +1,4 @@
-import main from '../services/ai.service.js'
+import main from '../services/Service.js'
 
 export const getReview = async (req,res) => {
     
