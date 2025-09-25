@@ -4,9 +4,11 @@ import router from './src/routes/Route.js'
 import cors from 'cors'
 dotenv.config()
 const app = express()
-app.use(express.json())
+
 const allowedOrigins = ['http://localhost:5173','https://ai-reviewer-j876.vercel.app','https://ai-reviewer-j876-git-main-yash-ghatges-projects.vercel.app']
 
+app.use(express.json());
+app.use(cookieParser());
 app.use(cors({
     origin:allowedOrigins,
     credentials:true
