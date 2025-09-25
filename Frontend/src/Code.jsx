@@ -24,7 +24,7 @@ function Code() {
 
   async function reviewCode() {
     try {
-    const response = await axios.post('https://ai-reviewer-nine.vercel.app/api/ai/get-review', { code })
+    const response = await axios.post('https://ai-reviewer-git-main-yash-ghatges-projects.vercel.app/api/ai/get-review', { code })
     setReview(response.data.response) 
   } catch (error) {
     console.error("Error fetching review:", error)
