@@ -5,10 +5,11 @@ import prism from "prismjs"
 import Markdown from "react-markdown"
 import rehypeHighlight from "rehype-highlight";
 import "highlight.js/styles/github-dark.css";
-
-import axios from 'axios'
 import './Code.css'
+import axios from 'axios'
 
+axios.defaults.withCredentials = true;
+axios.defaults.baseURL = import.meta.env.VITE_BACKEND_URL;
 
 function Code() {
   
@@ -24,7 +25,7 @@ function Code() {
 
   async function reviewCode() {
     try {
-    const response = await axios.post('https://ai-reviewer-nine.vercel.app/api/ai/review', { code })
+    const response = await axios.post('/api/ai/review', { code })
     setReview(response.data.response) 
   } catch (error) {
     console.error("Error fetching review:", error)
