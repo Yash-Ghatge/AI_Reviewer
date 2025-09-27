@@ -62,11 +62,11 @@ Key Features
 
 | **Homepage** | 
 |-------------|
-| ![Homepage](./client/src/assets/Home.png) | 
+| ![Homepage](./Frontend/src/assets/Home.png) | 
 
 | **Code Page** | 
 |--------------|
-| ![Cart](./client/src/assets/Cart1.png) | 
+| ![Cart](./Frontend/src/assets/Code.png) | 
 
 ---
 
