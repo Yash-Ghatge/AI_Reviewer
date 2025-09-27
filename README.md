@@ -60,7 +60,7 @@ Key Features
 
 
 
-| **Homepage** | |
+| **Homepage** | 
 |-------------|
 | ![Homepage](./client/src/assets/Home.png) | 
 
